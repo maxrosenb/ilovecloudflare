@@ -3,10 +3,10 @@
 ### By Max Rosenberg
 
 
-Avaiable at [ilovecloudflare.com](ilovecloudflare.com) (DNS Propogation pending)
+Avaiable at [ilovecloudflare.com](ilovecloudflare.com) (DNS propogation pending)
 
 
-If the domain is not yet available, also available at [https://cloudflare-project.maxrosenb.workers.dev/](https://cloudflare-project.maxrosenb.workers.dev/)
+If this domain is not yet available, also available at [https://cloudflare-project.maxrosenb.workers.dev/](https://cloudflare-project.maxrosenb.workers.dev/)
 
 
 An application that will randomly send users to one of two webpages, as described in the assignment specs. All three extra credit assignments were completed. This project taught me a lot about Cloudflare Worker and its Runtime APIs. I enjoyed the project and appreciate the opportunity to apply to cloudflare and learn about new technologies like Workers.
@@ -30,7 +30,7 @@ The `/api/variants` API route will return an array of two URLs. Requests should 
 
 ### 1. Changing copy/URLs
 
-Modified some text and redirection url.
+Modified some text and the redirection url.
 
 ### 2. Persisting variants
 
