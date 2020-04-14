@@ -9,7 +9,7 @@ Avaiable at [ilovecloudflare.com](www.ilovecloudflare.com) (DNS propogation pend
 If this domain is not yet available, also available at [cloudflare-project.maxrosenb.workers.dev/](https://cloudflare-project.maxrosenb.workers.dev/)
 
 
-An application that will randomly send users to one of two webpages, as described in the assignment specs. All three extra credit assignments were completed. This project taught me a lot about Cloudflare Workers and its Runtime APIs. I enjoyed the project and appreciate the opportunity to apply to cloudflare and learn about new technologies like Workers.
+An application that will randomly send users to one of two webpages, as described in the assignment specs. All three extra credit features were implemented. This project taught me a lot about Cloudflare Workers and its Runtime APIs. I enjoyed the project and appreciate the opportunity to apply to cloudflare and learn about new technologies like Workers.
 
 
 ## Features
