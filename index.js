@@ -83,13 +83,14 @@ class AttributeRewriter {
         this.attributeName,
         attribute.replace('cloudflare.com', 'google.com')
       )
+      element.setInnerContent("Goodbye")
     }
   }
 }
 
 class ElementRewriter {
   element(element) {
-    element.setInnerContent("Thanks for the oppurtunity cloudflare!")
+    element.setInnerContent("Thanks for the opportunity cloudflare!")
   }
 }
 
