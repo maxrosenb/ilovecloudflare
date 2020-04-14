@@ -16,15 +16,15 @@ An application that will randomly send users to one of two webpages, as describe
 
 ### 1. Request the URLs from the API
 
-Makes a fetch request to `https://cfw-takehome.developers.workers.dev/api/variants`, parses the response as JSON, saves to a variable.
+Makes a fetch request to `https://cfw-takehome.developers.workers.dev/api/variants`, parses the response as JSON, and saves to a variable.
 
 ### 2. Request a URL variant
 
-Makes a fetch request to one of the two URLs, and returns it as the response from the script.
+Makes a fetch request to one of the two URLs and returns it as the response from the script.
 
 ### 3. Distribute requests between variants (A/B Testing)
 
-The `/api/variants` API route returns an array of two URLs. Requests are evenly distributed between the two urls, in A/B testing style. This means that when a client makes a request to the Workers script, the script should roughly return each variant around 50% of the time.
+The `/api/variants` API route returns an array of two URLs. Requests are evenly distributed between the two urls, in A/B testing style. This means that when a client makes a request to the Workers script, the script roughly returns each variant around 50% of the time. This is ensured by choosing the variant randomly with a 50% probability of getting variant 1 or variant 2.
 
 ## Extra Credit
 
