@@ -105,10 +105,3 @@ const rewriter = new HTMLRewriter()
 addEventListener('fetch', event => {
   event.respondWith(handleRequest(event.request))
 })
-
-/**
- * Example someHost is set up to take in a JSON request
- * Replace url with the host you wish to send requests to
- * @param {string} url the URL to send the request to
- * @param {BodyInit} body the JSON data to send in the request
- */
