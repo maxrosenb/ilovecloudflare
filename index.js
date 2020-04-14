@@ -1,3 +1,4 @@
+
 const cfwTakeHomeUrl = 'https://cfw-takehome.developers.workers.dev/api/variants'
 
 async function handleRequest(request) {
@@ -74,34 +75,31 @@ async function gatherResponse(response) {
 }
 
 //HTML Rewriter to rewrite HTML elements
-class ElementRewriter {
+class AttributeRewriter {
   constructor(attributeName) {
     this.attributeName = attributeName
   }
 
   element(element) {
     const attribute = element.getAttribute(this.attributeName)
+    console.log(attribute)
     if (attribute) {
       element.setAttribute(
         this.attributeName,
-        attribute.replace("google.com"),
+        attribute.replace('cloudflare.com', 'google.com')
       )
-    }
-    if (element.tagName === "h1") {
-      element.setInnerContent("Welcome to ilovecloudflare.")
-    }
-    if (element.tagName === "p") {
-      element.setInnerContent("Thanks for the oppurtunity Cloudflare! <3")
-    }
-    if (element.tagName === "a") {
-      element.setInnerContent("Now get out! (or stick around if you want)")
     }
   }
 }
 
+class ElementRewriter {
+  element(element) {
+    element.setInnerContent("Thanks for the oppurtunity cloudflare!")
+  }
+}
+
 const rewriter = new HTMLRewriter()
-  .on('a#url', new ElementRewriter('href'))
-  .on('h1#title', new ElementRewriter('href'))
+  .on('a#url', new AttributeRewriter('href'))
   .on('p#description', new ElementRewriter('href'))
 
 addEventListener('fetch', event => {
