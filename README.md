@@ -1,6 +1,6 @@
 # Cloudflare Workers Internship Application: Full-Stack
 
-### ByMax Rosenberg
+### By Max Rosenberg
 
 
 Avaiable at [ilovecloudflare.com](ilovecloudflare.com) (DNS Propogation pending)
@@ -30,7 +30,7 @@ The `/api/variants` API route will return an array of two URLs. Requests should 
 
 ### 1. Changing copy/URLs
 
-Changed some text and redirection url.
+Modified some text and redirection url.
 
 ### 2. Persisting variants
 
