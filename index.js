@@ -77,7 +77,6 @@ class AttributeRewriter {
 
   element(element) {
     const attribute = element.getAttribute(this.attributeName)
-    console.log(attribute)
     if (attribute) {
       element.setAttribute(
         this.attributeName,
