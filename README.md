@@ -24,7 +24,7 @@ Makes a fetch request to one of the two URLs, and returns it as the response fro
 
 ### 3. Distribute requests between variants (A/B Testing)
 
-The `/api/variants` API route will return an array of two URLs. Requests should be evenly distributed between the two urls, in A/B testing style. This means that when a client makes a request to the Workers script, the script should roughly return each variant around 50% of the time.
+The `/api/variants` API route returns an array of two URLs. Requests should be evenly distributed between the two urls, in A/B testing style. This means that when a client makes a request to the Workers script, the script should roughly return each variant around 50% of the time.
 
 ## Extra Credit
 
