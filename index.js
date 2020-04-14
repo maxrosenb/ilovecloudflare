@@ -1,4 +1,3 @@
-
 const cfwTakeHomeUrl = 'https://cfw-takehome.developers.workers.dev/api/variants'
 
 async function handleRequest(request) {
@@ -13,12 +12,13 @@ async function handleRequest(request) {
       'content-type': 'text/html;charset=UTF-8',
     },
   }
+
   //execute initial fetch request
   const response = await fetch(cfwTakeHomeUrl, init);
   const result = await gatherResponse(response);
+  const urls = result.variants
 
   //get urls
-  const urls = result.variants
   const url0 = urls[0];
   const url1 = urls[1];
 
@@ -30,11 +30,9 @@ async function handleRequest(request) {
   const pageResponse1 = await fetch(url1)
   const pageResult1 = await gatherResponse(pageResponse1)
 
-
   //AB TESTING WITH 50/50 Chance
   const NAME = 'experiment-0'
-  // Responses below are place holders, you could set up
-  // a custom path for each test (e.g. /control/somepath )
+
   const VERSION_A =  new Response(pageResult0, pageInit)
   const VERSION_B =  new Response(pageResult1, pageInit)
   // Determine which group this requester is in.
@@ -55,11 +53,7 @@ async function handleRequest(request) {
 addEventListener('fetch', event => {
   return event.respondWith(handleRequest(event.request))
 })
-/**
- * gatherResponse awaits and returns a response body as a string.
- * Use await gatherResponse(..) in an async function to get the response body
- * @param {Response} response
- */
+
 async function gatherResponse(response) {
   const { headers } = response
   const contentType = headers.get('content-type')
@@ -74,7 +68,8 @@ async function gatherResponse(response) {
   }
 }
 
-//HTML Rewriter to rewrite HTML elements
+//Rewriters
+
 class AttributeRewriter {
   constructor(attributeName) {
     this.attributeName = attributeName
