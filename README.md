@@ -3,10 +3,10 @@
 ### By Max Rosenberg
 
 
-Avaiable at [ilovecloudflare.com](ilovecloudflare.com) (DNS propogation pending)
+Avaiable at [ilovecloudflare.com](www.ilovecloudflare.com) (DNS propogation pending)
 
 
-If this domain is not yet available, also available at [https://cloudflare-project.maxrosenb.workers.dev/](https://cloudflare-project.maxrosenb.workers.dev/)
+If this domain is not yet available, also available at [cloudflare-project.maxrosenb.workers.dev/](https://cloudflare-project.maxrosenb.workers.dev/)
 
 
 An application that will randomly send users to one of two webpages, as described in the assignment specs. All three extra credit assignments were completed. This project taught me a lot about Cloudflare Worker and its Runtime APIs. I enjoyed the project and appreciate the opportunity to apply to cloudflare and learn about new technologies like Workers.
