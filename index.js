@@ -32,15 +32,15 @@ async function handleRequest(request) {
 
   //AB TESTING WITH 50/50 Chance
   const NAME = 'experiment-0'
-
   const VERSION_A =  new Response(pageResult0, pageInit)
   const VERSION_B =  new Response(pageResult1, pageInit)
+
   // Determine which group this requester is in.
   const cookie = request.headers.get('cookie')
   if (cookie && cookie.includes(`${NAME}=control`)) {
-    return VERSION_A
+    return rewriter.transform(VERSION_A)
   } else if (cookie && cookie.includes(`${NAME}=test`)) {
-    return VERSION_B
+    return rewriter.transform(VERSION_B)
   } else {
     // if no cookie then this is a new client, decide a group and set the cookie
     let group = Math.random() < 0.5 ? 'test' : 'control' // 50/50 split
