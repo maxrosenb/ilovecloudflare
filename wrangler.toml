@@ -1,0 +1,8 @@
+name = "cloudflare-project"
+type = "javascript"
+account_id = "77f4829b6f3923a4964a9c2ac3336f32"
+workers_dev = true
+
+[env.production]
+route = "ilovecloudflare.com"
+zone_id = "d3b1f0ea8d6070b3f36d6120c2930d15"
