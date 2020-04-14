@@ -20,7 +20,7 @@ Makes a fetch request to `https://cfw-takehome.developers.workers.dev/api/varian
 
 ### 2. Request a URL variant
 
-Makes a fetch request to one of the two URLs, and return it as the response from the script.
+Makes a fetch request to one of the two URLs, and returns it as the response from the script.
 
 ### 3. Distribute requests between variants (A/B Testing)
 
