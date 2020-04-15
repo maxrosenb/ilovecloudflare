@@ -89,7 +89,7 @@ class AttributeRewriter {
 
 class ElementRewriter {
   element(element) {
-    element.setInnerContent("Thanks for the opportunity cloudflare!")
+    element.setInnerContent("Thanks for the opportunity Cloudflare!")
   }
 }
 
