@@ -3,7 +3,7 @@
 ### By Max Rosenberg
 
 
-Avaiable at [ilovecloudflare.com](https://www.ilovecloudflare.com) (possibly pending DNS propogation)
+Avaiable at [ilovecloudflare.com](https://www.ilovecloudflare.com)
 
 
 If this domain has not yet propogated, it is also available at [cloudflare-project.maxrosenb.workers.dev/](https://cloudflare-project.maxrosenb.workers.dev/)
