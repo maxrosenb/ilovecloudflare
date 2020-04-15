@@ -1,7 +1,4 @@
-# Cloudflare Workers Internship Application: Full-Stack
-
-### By Max Rosenberg
-
+## Cloudflare Workers Full-Stack Internship Project: Max Rosenberg
 
 Avaiable at [ilovecloudflare.com](https://www.ilovecloudflare.com)
 
