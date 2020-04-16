@@ -2,7 +2,7 @@
 
 ### Maxwell Rosenberg
 
-Avaiable at [ilovecloudflare.com](www.ilovecloudflare.com)
+Avaiable at [ilovecloudflare.com](ilovecloudflare.com)
 
 An application that will randomly send users to one of two webpages, as described in the assignment specs. All three extra credit features were implemented. This project taught me a lot about Cloudflare Workers and its Runtime APIs. I enjoyed the project and really appreciate the opportunity to apply to Cloudflare and learn about new technologies like Workers.
 
